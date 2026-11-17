@@ -1,0 +1,27 @@
+Return-Path: <bounce@apple-id-verification-support.com>
+Received: from mail.apple-id-verification-support.com (mail.apple-id-verification-support.com [198.51.100.45])
+	by mx.google.com with ESMTPS id a1b2c3d4e5
+	for <victim@gmail.com>
+	(version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384);
+	Fri, 13 Nov 2026 03:14:15 -0800 (PST)
+From: "Apple Support" <security@apple-id-verification-support.com>
+Reply-To: support@apple-id-verification-support.com
+To: victim@gmail.com
+Subject: Action Required: Your Apple ID has been locked for security reasons
+Authentication-Results: mx.google.com;
+       spf=fail (google.com: domain of bounce@apple-id-verification-support.com does not designate 198.51.100.45 as permitted sender) smtp.mailfrom=bounce@apple-id-verification-support.com;
+       dkim=none (message not signed) header.d=none;
+       dmarc=fail (p=REJECT sp=REJECT dis=NONE) header.from=apple-id-verification-support.com
+Content-Type: text/html; charset="UTF-8"
+
+<!DOCTYPE html>
+<html>
+<body>
+<p>Dear Customer,</p>
+<p>We noticed that your Apple ID was recently used to sign in from an unrecognized device in <b>Russia</b>.</p>
+<p>For your security, we have temporarily locked your account. You must verify your identity within <b>12 HOURS</b> to restore access to your iCloud and App Store.</p>
+<p><a href="http://apple-id-verify-login.com/secure">Verify My Account Now</a></p>
+<p>If you do not verify within 12 hours, your account will be permanently disabled.</p>
+<p>Sincerely,<br>Apple Security Team</p>
+</body>
+</html>
