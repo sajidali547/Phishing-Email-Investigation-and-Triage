@@ -33,6 +33,15 @@ This project recreates that situation with a constructed `.eml` sample. It docum
 
 The phishing verdict reflects the combined evidence and the sample's intended deception. A single VirusTotal detection or missing authentication record alone is not enough to classify every email as phishing.
 
+## MITRE ATT&CK mapping
+
+| Tactic | Technique | Evidence in the sample |
+| --- | --- | --- |
+| Initial Access | [T1566.002 — Spearphishing Link](https://attack.mitre.org/techniques/T1566/002/) | The verification link directs the recipient to a lookalike website. |
+| Stealth | [T1684.001 — Impersonation](https://attack.mitre.org/techniques/T1684/001/) | The sender claims to be Apple Support and signs as the Apple Security Team. |
+
+These mappings describe the phishing lure in the training sample. A recipient click, credential capture, or successful compromise was not demonstrated. See the [incident report](docs/incident-report.md#mitre-attck-mapping) for supporting evidence.
+
 ## Annotated evidence
 
 ![Email red flags marked with rectangular boxes and short captions](screenshots/03-email-red-flags.png)

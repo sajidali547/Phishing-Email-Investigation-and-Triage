@@ -42,7 +42,16 @@ The sample IP `198.51.100.45` belongs to the documentation-only TEST-NET-2 range
 - **Generic greeting:** the recipient is addressed as "Dear Customer".
 - **Suspicious destination:** the verification link points outside `apple.com`.
 
-This exercise illustrates link-based phishing. ATT&CK reference: [T1566.002 — Spearphishing Link](https://attack.mitre.org/techniques/T1566/002/).
+## MITRE ATT&CK mapping
+
+Mapping reviewed against the official MITRE ATT&CK pages on **17 November 2026**.
+
+| Tactic | Technique | Mapping rationale | Evidence |
+| --- | --- | --- | --- |
+| Initial Access | [T1566.002 — Phishing: Spearphishing Link](https://attack.mitre.org/techniques/T1566/002/) | The email uses an account-verification pretext to persuade the recipient to follow a suspicious URL. This represents an attempted phishing path. | [Email sample](../samples/phishing_sample.eml), [boxed verification link](../screenshots/03-email-red-flags.png). |
+| Stealth | [T1684.001 — Social Engineering: Impersonation](https://attack.mitre.org/techniques/T1684/001/) | The message presents itself as Apple Support, uses a lookalike sender domain, and signs as the Apple Security Team to appear trustworthy. | [Sender and body evidence](../screenshots/03-email-red-flags.png), [header review](../screenshots/01-header-analysis.png). |
+
+**Scope:** Both mappings describe behavior present in the constructed sample. The evidence does not establish recipient interaction, credential capture, or account access. Authentication findings and the VirusTotal score support triage; they are not separate ATT&CK techniques.
 
 ## Recommended response
 
